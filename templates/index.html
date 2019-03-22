@@ -1,0 +1,15 @@
+<html>
+    <body>
+        <h4>User mail: {{ user_email }}</h4>
+	<h4>User repos: </h4>
+	<ul>
+	{% for repo in user_repos %}
+        <li>{{ repo }}</li>
+        {% endfor %}
+	</ul>
+	<h4>User's language statistics:</h4>
+	{% for lang,stat in lang_stats.iteritems() %}
+        <li>{{ lang }}: {{ stat }}</li>
+        {% endfor %}
+    </body>
+</html>
