@@ -8,8 +8,10 @@
         {% endfor %}
 	</ul>
 	<h4>User's language statistics:</h4>
+	<ul>
 	{% for lang,stat in lang_stats.items() %}
         <li>{{ lang }}: {{ stat }}</li>
         {% endfor %}
+	</ul>
     </body>
 </html>
