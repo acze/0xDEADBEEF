@@ -8,7 +8,7 @@
         {% endfor %}
 	</ul>
 	<h4>User's language statistics:</h4>
-	{% for lang,stat in lang_stats.iteritems() %}
+	{% for lang,stat in lang_stats.items() %}
         <li>{{ lang }}: {{ stat }}</li>
         {% endfor %}
     </body>
