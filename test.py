@@ -7,7 +7,7 @@ class DeadbeefTestCase(unittest.TestCase):
 
     def test_index(self):
         response = self.app.get('/')
-        assert b'mail' in response.data
+        assert b'DEADBEEF' in response.data
 
 if __name__ == '__main__':
     unittest.main()
